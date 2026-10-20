@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aldrin Picson — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- grain overlay -->
+<div class="grain"></div>
+
+<!-- custom cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"><span class="cursor-label" id="cursorLabel">view</span></div>
+
+<!-- canvas particles -->
+<canvas id="particles"></canvas>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-text">
+    <span class="loader-word" data-word="PORTFOLIO">PORTFOLIO</span>
+    <span class="loader-word outline" data-word="LOADING">LOADING</span>
+  </div>
+  <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+  <div class="loader-pct" id="loaderPct">0%</div>
+</div>
+
+<!-- side nav -->
+<nav class="side-nav">
+  <a href="#hero" data-nav>00</a>
+  <a href="#work" data-nav>01</a>
+  <a href="#about" data-nav>02</a>
+  <a href="#skills" data-nav>03</a>
+  <a href="#contact" data-nav>04</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="hero">
+  <div class="hero-top">
+    <span class="mono">© 2026</span>
+    <span class="mono">BASED IN — VALENZUELA, PH</span>
+    <span class="mono blink">● OPEN FOR WORK</span>
+  </div>
+
+  <div class="hero-title" id="heroTitle">
+    <div class="line"><span class="reveal"><h1 data-text="ALDRIN PICSON">ALDRIN PICSON</h1></span></div>
+    <div class="line line-2"><span class="reveal"><h1 class="outline" data-text="PORTFOLIO">PORTFOLIO</h1></span></div>
+  </div>
+
+  <div class="hero-bottom">
+    <p class="hero-desc reveal-text">I turn <em>ideas</em> into digital experiences.<br>
+    IT Student / Developer / Designer — scroll to explore.</p>
+    <div class="hero-side">
+      <div class="scroll-hint mono">
+        <span>SCROLL</span>
+        <div class="scroll-line"><div class="scroll-dot"></div></div>
+        <span>DOWN</span>
+      </div>
+      <span class="hero-year mono">14.72°N<br>120.98°E</span>
+    </div>
+  </div>
+
+  <div class="hero-stamp">
+    <svg viewBox="0 0 100 100" class="stamp-svg">
+      <defs><path id="circlePath" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"/></defs>
+      <text><textPath href="#circlePath">ALDRIN PICSON • IT DEVELOPER • </textPath></text>
+    </svg>
+  </div>
+</header>
+
+<!-- MARQUEE -->
+<div class="marquee" id="marquee">
+  <div class="marquee-track" id="marqueeTrack">
+    <span>UNITY</span><span class="star">✦</span>
+    <span>ANDROID STUDIO</span><span class="star">✦</span>
+    <span>WEB DEVELOPMENT</span><span class="star">✦</span>
+    <span>UI DESIGN</span><span class="star">✦</span>
+    <span>IT SUPPORT</span><span class="star">✦</span>
+    <span>VIDEO EDITING</span><span class="star">✦</span>
+  </div>
+</div>
+
+<!-- WORK -->
+<section class="section" id="work">
+  <div class="section-head">
+    <h2 class="sec-title mono">01 / SELECTED<br>WORK</h2>
+    <span class="sec-index mono">( 2025 — 2026 )</span>
+  </div>
+
+  <div class="projects" id="projects">
+
+    <article class="project" data-cursor="open">
+      <div class="proj-info">
+        <span class="proj-num mono">01</span>
+        <h3 class="proj-title" data-text="AR ALPHABET ADVENTURE">AR ALPHABET ADVENTURE</h3>
+        <p class="proj-meta mono">AR MOBILE APP — 2025</p>
+        <p class="proj-desc">An interactive mobile app that uses Augmented Reality to bring letters to life — pairing each character with a 3D object to make learning the alphabet an immersive experience for kids.</p>
+        <span class="proj-arrow">↗</span>
+      </div>
+      <div class="proj-media">
+        <div class="proj-phone"><div class="device-screen"><video src="assets/ar.mp4" loop muted playsinline preload="metadata"></video></div></div>
+      </div>
+    </article>
+
+    <article class="project" data-cursor="open">
+      <div class="proj-info">
+        <span class="proj-num mono">02</span>
+        <h3 class="proj-title" data-text="MAY DAY EVE">MAY DAY EVE</h3>
+        <p class="proj-meta mono">VISUAL NOVEL GAME — 2025</p>
+        <p class="proj-desc">An interactive Visual Novel adaptation of Nick Joaquin's classic short story "May Day Eve" — turning Filipino literature into an engaging, playable experience.</p>
+        <span class="proj-arrow">↗</span>
+      </div>
+      <div class="proj-media">
+        <div class="proj-monitor"><div class="device-screen"><video src="assets/mde.mp4" loop muted playsinline preload="metadata"></video></div></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="about-grid">
+    <div>
+      <h2 class="about-title"><span class="reveal-text">I DESIGN <em>&</em></span><br><span class="reveal-text">I <em>BUILD</em> THINGS.</span></h2>
+    </div>
+    <div class="about-body mono">
+      <p class="reveal-text">I'm an IT student from Valenzuela City with hands-on experience in PC troubleshooting and a solid foundation in Unity, Android Studio, and web development.</p>
+      <p class="reveal-text">Certified in Animation (NC II) and Visual Graphics Design (NC III), I blend code, design, and motion — currently exploring AR and interactive storytelling.</p>
+      <div class="about-stats">
+        <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-label">PROJECTS BUILT</span></div>
+        <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">YEARS OF CODE</span></div>
+        <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">CERTS EARNED</span></div>
+      </div>
+    </div>
+    <div class="about-img" data-cursor="me">
+      <img src="assets/huh.png" alt="Portrait of Aldrin Picson">
+      <span class="about-img-cap mono">FIG.01 — ME, 2026</span>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="section-head">
+    <h2 class="sec-title mono">03 / TOOLBOX</h2>
+    <span class="sec-index mono">( STACKS & CRAFT )</span>
+  </div>
+  <div class="skills" id="skillsList">
+    <div class="skill" data-cursor="drag"><span class="skill-name">Unity</span></div>
+    <div class="skill" data-cursor="drag"><span class="skill-name">Android Studio</span></div>
+    <div class="skill" data-cursor="drag"><span class="skill-name">Web & System Dev</span></div>
+    <div class="skill" data-cursor="drag"><span class="skill-name">UI Design</span></div>
+    <div class="skill" data-cursor="drag"><span class="skill-name">Video & Photo Editing</span></div>
+    <div class="skill" data-cursor="drag"><span class="skill-name">PC Troubleshooting</span></div>
+    <div class="skill" data-cursor="drag"><span class="skill-name">IT Support</span></div>
+    <div class="skill" data-cursor="drag"><span class="skill-name">Windows Config</span></div>
+  </div>
+  <p class="skills-hint mono">— DRAG THE CHIPS</p>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <h2 class="contact-title">
+    <a href="mailto:pecsonaldrin1122@gmail.com" data-cursor="send">
+      <span class="reveal-text">LET'S MAKE</span><br>
+      <span class="outline" data-text="SOMETHING">SOMETHING</span>
+    </a>
+  </h2>
+  <div class="contact-footer">
+    <div class="contact-links">
+      <a href="tel:+639931261317" class="contact-link" data-cursor="call" data-text="CALL">+63 993 126 1317</a>
+      <a href="https://www.linkedin.com/in/aldrin-picson-0626bb2a1" class="contact-link" data-cursor="open" data-text="LINKEDIN">LINKEDIN</a>
+      <a href="mailto:pecsonaldrin1122@gmail.com" class="contact-link" data-cursor="send" data-text="EMAIL">EMAIL</a>
+    </div>
+    <p class="mono copy-note">pecsonaldrin1122@gmail.com — Valenzuela City — © 2026</p>
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
